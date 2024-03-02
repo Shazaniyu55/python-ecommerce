@@ -13,7 +13,7 @@
 <body>
     <nav class="navbar navbar-expand-lg bg-success">
         <div class="container-fluid">
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="">
 
             <img src="{% static  'app/images/Neel.png' %}" width="60" height="60">
           </a>
@@ -23,7 +23,7 @@
           <div class="collapse navbar-collapse" id="navbarSupportedContent">
             <ul class="navbar-nav me-auto mb-2 mb-lg-0">
               <li class="nav-item">
-                <a class="nav-link active" aria-current="page" href="#">Home</a>
+                <a class="nav-link active" aria-current="page" href="">Home</a>
               </li>
               <li class="nav-item">
                 <a class="nav-link" href="#">Link</a>
@@ -33,10 +33,10 @@
                   Products
                 </a>
                 <ul class="dropdown-menu">
-                  <li><a class="dropdown-item" href="#">Milk</a></li>
-                  <li><a class="dropdown-item" href="#">Shirt</a></li>
-                  <li><a class="dropdown-item" href="#">Clothes</a></li>
-                  <li><a class="dropdown-item" href="#">Shoe</a></li>
+                  <li><a class="dropdown-item" href="{% url 'category' 'ML' %}">Milk</a></li>
+                  <li><a class="dropdown-item" href="{% url 'category' 'CR' %}">Cream</a></li>
+                  <li><a class="dropdown-item" href="{% url 'category' 'MS' %}">MilkShake</a></li>
+                  <li><a class="dropdown-item" href="{% url 'category' 'IC' %}">Icecream</a></li>
                   
                 </ul>
               </li>
